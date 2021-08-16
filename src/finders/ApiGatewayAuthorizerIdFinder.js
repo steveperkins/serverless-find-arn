@@ -59,7 +59,7 @@ class ApiGatewayAuthorizerIdFinder {
       if (apiGatewayAuthorizerName && authorizersKeys.length > 0 && this.apiGatewayAuthorizerIds.hasOwnProperty(apiGatewayAuthorizerName)) {
         return this.apiGatewayAuthorizerIds[apiGatewayAuthorizerName]
       } else {
-        return this.apiGatewayAuthorizerIds[keys[0]]
+        return this.apiGatewayAuthorizerIds[authorizersKeys[0]]
       }
     } else {
       console.error("No API Gateways found in AWS")
